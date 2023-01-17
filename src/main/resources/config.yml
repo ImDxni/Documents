@@ -1,0 +1,95 @@
+inventory:
+  secretary:
+    title: "Computer segreteria"
+    items:
+      empty:
+        '1':
+          material: GRAY_STAINED_GLASS_PANE
+          name: " "
+          slot:
+            row: 0
+            column: 0
+      identity:
+        material: PLAYER_HEAD
+        data: 2102
+        name: "&bStampa carta d'identità"
+        lore:
+          - "&cClicca qui per stampare la carta d'identità!"
+        slot:
+          row: 2
+          column: 2
+      health:
+        material: PLAYER_HEAD
+        data: 2103
+        name: "&bStampa tessera sanitaria"
+        lore:
+          - "&cClicca qui per stampare la tessera sanitaria!"
+        slot:
+          row: 2
+          column: 2
+
+  hospital:
+    title: "Computer Ospedale"
+    items:
+      empty:
+        '1':
+          material: GRAY_STAINED_GLASS_PANE
+          name: " "
+          slot:
+            row: 0
+            column: 0
+      register:
+        material: PLAYER_HEAD
+        data: 2100
+        name: "&bRegistra tessera sanitaria"
+        lore:
+          - "&cClicca qui per registrare la tessera sanitaria!"
+        slot:
+          row: 2
+          column: 2
+      check:
+        material: PLAYER_HEAD
+        data: 2101
+        name: "&Scansiona tessera sanitaria"
+        lore:
+          - "&cClicca qui per scansionare la tessera sanitaria!"
+        slot:
+          row: 3
+          column: 2
+
+expires-in-days: 14
+
+items:
+  identity:
+    material: STONE
+    name: "Carta d'identità"
+    lore:
+      - "Proprietario: %player%"
+      - "Scadenza: %expiration%"
+  health:
+    material: REDSTONE_BLOCK
+    name: "Tessera Sanitaria"
+    lore:
+      - "Proprietario: %player%"
+      - "Scadenza: %expiration%"
+
+
+identity-book:
+  '1':
+    - "CARTA D'IDENTITA"
+    - ""
+    - ""
+    - "LAVORO: %job%"
+    - ""
+    - "Tempo settimanale: %time%"
+
+messages:
+  wrong-type: "&cNon esiste un computer di questo tipo!"
+  computer-added: "&2Computer registrato!"
+  isnt-health-card: "&cDevi avere in mano la tessera sanitaria!"
+  cant-break: "&cAccovacciati per rompere questo blocco!"
+  computer-removed: "&2Compute rimosso!"
+  card-printed: "Carta stampata!"
+  card-registered: "La tessera sanitaria è registrata"
+  card-not-registered: "La tessera sanitaria non è registrata!"
+  card-registered-successfully: "Tessera sanitaria registrata correttamente!"

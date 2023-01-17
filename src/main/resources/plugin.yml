@@ -1,0 +1,12 @@
+name: Documenti
+version: '${version}'
+main: org.waraccademy.documenti.Documents
+api-version: 1.16
+authors: [ WarAccademy ]
+description: Plugin per i documenti
+depend: [HeadDatabase,Vault]
+softdepend:
+  - PlayTime
+  - SmartInvs
+commands:
+  computer:
